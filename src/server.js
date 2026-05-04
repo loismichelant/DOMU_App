@@ -10,6 +10,9 @@ const PORT = process.env.PORT || 3000; // Port du serveur
 // Fonction pour démarrer le serveur
 const startServer = async () => {
     try {
+
+        console.log("ENV TEST:", process.env.MONGODB_URI);
+        
         // Connexion à la base de données
         await connectDB();
 
